@@ -14,9 +14,11 @@
 
         *{
             margin: 0;
+            padding: 0;
         }
         body{
             background-color: #13131A;
+            font-family: "Inter", sans-serif;
         }
 
         /* navigation container */
@@ -42,40 +44,41 @@
             text-decoration: none;
             color: #8B8B8B;
             margin: 1em 0 1em 0;
-            font-family: "Inter", sans-serif;
+            
         }
 
         /* body */
         .body-container{
             margin-left: 15vw;
-            margin-right: 15vw;
+            margin-right: 20vw;
+            
         }
 
         .hero{
             display: flex;
+            justify-content: center;
         }
 
         .body-color{
             color: #FFFFFF;
-            font-family: "Inter", sans-serif;
+
             font-weight: 200;
         }
         .table-header{
             color: #FFC332;
-            font-family: "Inter", sans-serif;
             font-weight: 600;
             text-align: start;
             padding: 2vh 4vh 2vh 0;
         }
         .table-body-color{
             color: #FFFFFF;
-            font-family: "Inter", sans-serif;
+
             font-weight: 600;
             padding: 2vh 4vh 2vh 0;
         }
         .table-subbody-color{
             color: #8B8B8B;
-            font-family: "Inter", sans-serif;
+
             font-weight: 400;
             text-align: start;
             padding: 2vh 4vh 2vh 0;
@@ -83,17 +86,33 @@
         }
         .header-color{
             color: #FFC332;
-            font-family: "Inter", sans-serif;
+
             font-weight: 700;
             font-size: 50px;
             
         }
         .hero-info{
             margin: 15vh 5vh;
-            
+
         }
         p{
             max-width: 70%;
+        }
+
+        .ul-settings{
+            padding-left: 2vh;
+            font-size: 24px;
+        }
+
+        .ol-settings{
+            padding-left: 2vh;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+        .ol-data{
+            font-size: 16px;
+            color: #8B8B8B;
+            padding: .5vh;
         }
     </style>
 </head>
@@ -163,20 +182,30 @@
         <br>
         <div class="gen-skills">
             <h1 class="header-color">General Skills</h1> <br>
-            <ul>
+            <ul class="ul-settings">
                 <li class="table-body-color">Photography</li>
+                    
                 <li class="table-body-color">Coding</li>
+                    
                 <li class="table-body-color">Design</li>
+                   
             </ul>
         </div>
 
         <br>
         <div class="char-ref">
-            <h1 class="header-color">Character References</h1> <br> sa
+            <h1 class="header-color">Character References</h1> <br> 
+            <ol class="ol-settings">
+                <li>John Kim</li>
+                    <p class="ol-data">Manager, At the Moment co. <br> johnkim@atm.com</p>
+                <li>Juvin Durante</li>
+                    <p class="ol-data">Manager, At the Moment co. <br> johnkim@atm.com</p>
+                <li>Dimmie Luces</li>
+                    <p class="ol-data">Manager, At the Moment co. <br> johnkim@atm.com</p>
 
+            </ol>
         </div>
     </div>
     
-  
 </body>
 </html>
