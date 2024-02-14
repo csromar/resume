@@ -15,6 +15,7 @@
         *{
             margin: 0;
             padding: 0;
+            user-select: none;
         }
         body{
             background-color: #13131A;
@@ -25,26 +26,31 @@
         .container{
             background-color: #0D0D12;
             position: fixed;
-            width: 10%;
+            min-width: 10%;
             min-height: 100vh;
             
         }
 
-        .nav{
+        .nav-aside{
             display: flex;
             flex-direction: column;
             align-items: center;
             position: sticky;
         }
 
-        .nav .nav-icon{
+        .nav-aside .nav-icon{
             margin: 3em 0 3em 0;
         }
+
         .nav-items{
             text-decoration: none;
             color: #8B8B8B;
             margin: 1em 0 1em 0;
-            
+            transition: all 0.2s;
+        }
+
+        .nav-items:hover{
+            color: #FFC332;
         }
 
         /* body */
@@ -53,7 +59,6 @@
             margin-right: 20vw;
             
         }
-
         .hero{
             display: flex;
             justify-content: center;
@@ -92,7 +97,7 @@
             
         }
         .hero-info{
-            margin: 15vh 5vh;
+            margin: 15vh 0 5vh 5vh;
 
         }
         p{
@@ -111,21 +116,22 @@
         }
         .ol-data{
             font-size: 16px;
-            color: #8B8B8B;
-            padding: .5vh;
+            color: #d7d7d7;
+            padding: 1vh;
+            font-weight: 300;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="nav">
+        <div class="nav-aside">
             <img src="images/r-icon 1.png" alt="romar castro's icon" class="nav-icon" width="50px">
             <a href="#" class="nav-items">HOME</a>
-            <a href="#" class="nav-items">CONTACT</a>
-            <a href="#" class="nav-items">EDUCATION</a>
-            <a href="#" class="nav-items">SKILLS</a>
-            <a href="#" class="nav-items">REFERENCES</a>
+            <a href="#contact-info" class="nav-items">CONTACT</a>
+            <a href="#educational-bg" class="nav-items">EDUCATION</a>
+            <a href="#gen-skills" class="nav-items">SKILLS</a>
+            <a href="#char-ref" class="nav-items">REFERENCES</a>
         </div>
     </div>
     
@@ -140,12 +146,15 @@
                 <h1 class="header-color">Romar Josh E. Castro</h1> <br>
                 <p class="body-color">A 2nd Year BS-Information Technology student at Ateneo De Naga University,
                     I am an aspiring front-end developer and UI/UX designer from Bicol, Philippines
+                    <br> <br>
+                    I am currently exploring the realm of front-end development by learning the programming languages
+                    and design principles to master the fundamentals.
                 </p>
             </div>
         </div>
         <hr>
         <br>
-        <div class="contact-info">
+        <div id="contact-info" class="contact-info">
             <h1 class="header-color">Contact Information</h1> <br>
             <table>
                 <th class="table-subbody-color">Name</th> <td class="table-body-color">Romar Josh E. Castro</tr>
@@ -157,7 +166,7 @@
        
 
         <br>
-        <div class="educational-bg">
+        <div id="educational-bg" class="educational-bg">
             <h1 class="header-color">Educational Background</h1> <br>
             <table>
                 <th class="table-subbody-color">Pre-School</th> <td class="table-body-color">University of Nueva Caceres</tr>
@@ -167,7 +176,7 @@
         </div>
 
         <br>
-        <div class="contact-info">
+        <div class="work">
             <h1 class="header-color">Work Experience</h1> <br>
             <table>
                 <th class="table-header">Year</th> <th class="table-header">Role</th> <th class="table-header">Company/Organization</th>
@@ -176,11 +185,11 @@
                 <td class="table-subbody-color">2023</td> <td class="table-body-color">Photographer <td class="table-body-color">TACTICS</td></tr> 
             </table>
         </div>
-        
+    
         <br><br>
         <hr>
         <br>
-        <div class="gen-skills">
+        <div id="gen-skills"  class="gen-skills">
             <h1 class="header-color">General Skills</h1> <br>
             <ul class="ul-settings">
                 <li class="table-body-color">Photography</li>
@@ -192,20 +201,20 @@
             </ul>
         </div>
 
-        <br>
-        <div class="char-ref">
+        <br> <hr> <br>
+        <div id="char-ref" class="char-ref">
             <h1 class="header-color">Character References</h1> <br> 
             <ol class="ol-settings">
                 <li>John Kim</li>
-                    <p class="ol-data">Manager, At the Moment co. <br> johnkim@atm.com</p>
+                    <p class="ol-data"> <i>Manager, At the Moment co. <br> johnkim@atm.com </i></p>
                 <li>Juvin Durante</li>
-                    <p class="ol-data">Manager, At the Moment co. <br> johnkim@atm.com</p>
+                    <p class="ol-data"> <i>Moderator, the PantographxMalaya <br> juvindurante@unc.edu.ph </i></p>
                 <li>Dimmie Luces</li>
-                    <p class="ol-data">Manager, At the Moment co. <br> johnkim@atm.com</p>
-
+                    <p class="ol-data"><i>President, TACTICS <br> dluces@gbox.adnu.edu.ph</i></p>
             </ol>
         </div>
     </div>
     
+    <br> <br>
 </body>
 </html>
