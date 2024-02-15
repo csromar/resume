@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Romar Castro | Resume</title>
+    <link rel="icon" href="images/r-icon 1.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        body{
+            background-color: #13131A;
+            font-family: "Inter", sans-serif;
+        }
+
+        /* navigation container */
+        .container{
+            background-color: #0D0D12;
+            position: fixed;
+            min-width: 10%;
+            min-height: 100vh;
+        }
+
+        .nav-aside{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: sticky;
+        }
+
+        .nav-aside .nav-icon{
+            margin: 3em 0 3em 0;
+        }
+
+        .nav-items{
+            text-decoration: none;
+            color: #8B8B8B;
+            margin: 1em 0 1em 0;
+            transition: all 0.2s;
+        }
+
+        .nav-items:hover{
+            color: #FFC332;
+        }
+
+        /* body */
+        .body-container{
+            margin-left: 15vw;
+            margin-right: 15vw;
+            
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+        }
+
+        /* color-sizing-configs */
+        .body-color{
+            color: #FFFFFF;
+
+            font-weight: 200;
+        }
+        .table-header{
+            color: #FFC332;
+            font-weight: 600;
+            text-align: start;
+            padding: 2vh 4vh 2vh 0;
+        }
+        .table-body-color{
+            color: #FFFFFF;
+
+            font-weight: 600;
+            padding: 2vh 4vh 2vh 0;
+        }
+        .table-subbody-color{
+            color: #8B8B8B;
+
+            font-weight: 400;
+            text-align: start;
+            padding: 2vh 4vh 2vh 0;
+            
+        }
+        .header-color{
+            color: #FFC332;
+
+            font-weight: 700;
+            font-size: 50px;
+            
+        }
+        .hero-info{
+            margin: 10vh 10vh 0 10vh;
+
+        }
+        p{
+            max-width: 70%;
+        }
+
+        .ul-settings{
+            padding-left: 2vh;
+            font-size: 20px;
+        }
+
+        .ol-settings{
+            padding-left: 2vh;
+            font-size: 24px;
+            color: #FFFFFF;
+        }
+        .ol-data{
+            font-size: 16px;
+            color: #bbbaba;
+            padding: 1.5vh;
+            font-weight: 300;
+        }
+
+        .skills{
+            display: flex;
+        }
+
+        .skills #gen-skills{
+            padding-right: 30vh;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-aside">
+            <img src="images/r-icon 1.png" alt="romar castro's icon" class="nav-icon" width="50px">
+            <a href="#" class="nav-items">HOME</a>
+            <a href="#contact-info" class="nav-items">CONTACT</a>
+            <a href="#educational-bg" class="nav-items">EDUCATION</a>
+            <a href="#work" class="nav-items">EXPERIENCE</a>
+            <a href="#gen-skills" class="nav-items">SKILLS</a>
+            <a href="#char-ref" class="nav-items">REFERENCES</a>
+        </div>
+    </div>
+    
+    <div class="body-container">
+        <div>
+            
+        </div>
+        <div class="hero">
+            <div class="hero-image">
+                <img src="images/myself 1.png" alt="" width="374" height="467">
+            </div>
+    
+            <div class="hero-info">
+                <h4 class="body-color">RESUME</h4> <br>
+                <h1 class="header-color">Romar Josh E. Castro</h1> <br>
+                <p class="body-color">A 2nd Year BS-Information Technology student at Ateneo De Naga University,
+                    I am an aspiring front-end developer and UI/UX designer from Bicol, Philippines.
+                    <br> <br>
+                    I am currently exploring the realm of front-end development by learning the programming languages
+                    and fundamental design principles to become proficient with the front-end edge of application development.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div id="contact-info" class="contact-info">
+            <h1 class="header-color">Contact Information</h1> <br>
+            <table>
+               <tr> <th class="table-subbody-color">Name</th> <td class="table-body-color">Romar Josh E. Castro </td> </tr>
+                <th class="table-subbody-color">Number</th> <td class="table-body-color">09456789101</td> </tr>
+                <th class="table-subbody-color">Location</th> <td class="table-body-color">Pacol, Naga City</td> </tr>
+                <th class="table-subbody-color">E-mail</th> <td class="table-body-color">rjcastro@gbox.adnu.edu.ph</td> </tr>       
+            </table>
+        </div>
+       
+
+        <br>
+        <div id="educational-bg" class="educational-bg">
+            <h1 class="header-color">Educational Background</h1> <br>
+            <table>
+                <tr></tr><th class="table-subbody-color">Pre-School</th> <td class="table-body-color">University of Nueva Caceres</td> </tr>
+                <tr></tr><th class="table-subbody-color">High-School</th> <td class="table-body-color">University of Nueva Caceres</td> </tr>
+                <tr></tr><th class="table-subbody-color">College</th> <td class="table-body-color">Ateneo de Naga University</td> </tr> 
+            </table>
+        </div>
+
+        <br>
+        <div id="work">
+            <h1 class="header-color">Work Experience</h1> <br>
+            <table>
+                <th class="table-header">Year</th> <th class="table-header">Role</th> <th class="table-header">Company/Organization</th>
+                <tr><td class="table-subbody-color">2020</td> <td class="table-body-color">Graphic Tee Designer</td> <td class="table-body-color">AT THE MOMENT co.</td></tr>
+                <tr></tr><td class="table-subbody-color">2021</th> <td class="table-body-color">Layout Artist <td class="table-body-color">THE PANTOGRAPH</td></tr> 
+                <tr></tr><td class="table-subbody-color">2023</td> <td class="table-body-color">Photographer <td class="table-body-color">TACTICS</td></tr> 
+            </table>
+        </div>
+    
+        <br><br>
+        <hr>
+        <br>
+        <div id="gen-skills"  class="skills">
+            <div id="gen-skills">
+                <h1 class="header-color">General Skills</h1> <br>
+                <ul class="ul-settings">
+                    <li class="table-body-color">Photography</li>
+                        
+                    <li class="table-body-color">Coding</li>
+                        
+                    <li class="table-body-color">Design</li>
+                </ul>
+            </div>
+            <div id="tech-skills">
+                <h1 class="header-color">Technical Skills</h1> <br>
+                <ul class="ul-settings">
+                    <li class="table-body-color">HTML/CSS</li>
+                        
+                    <li class="table-body-color">C++/C</li>
+                        
+                    <li class="table-body-color">Java/JavaFX</li>
+    
+                    <li class="table-body-color">BASH/Git</li>
+                </ul>
+            </div>
+        </div>
+
+        <br> <hr> <br>
+        <div id="char-ref" class="char-ref">
+            <h1 class="header-color">Character References</h1> <br> 
+            <ol class="ol-settings">
+                <li>John Kim</li>
+                    <p class="ol-data"> <b>Manager, At the Moment co. </b><br> <i>johnkim@atm.com </i></p>
+                <li>Juvin Durante</li>
+                    <p class="ol-data"> <b>Moderator, the PantographxMalaya </b><br> <i>juvindurante@unc.edu.ph </i></p>
+                <li>Dimmie Luces</li>
+                    <p class="ol-data"> <b>President, TACTICS </b><br> <i>dluces@gbox.adnu.edu.ph</i></p>
+            </ol>
+        </div>
+    </div>
+    
+    <br> <br>
+</body>
+</html>
